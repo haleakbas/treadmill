@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calorie Calculator</title>
+    
+    <link rel="stylesheet" href="style.css"> 
+</head>
+
+<body>
+
+<div class = "treadmill">
+    <img src="tread.png" width="950" height="550">
+    <div class = "inputs">
+    <table>
+        <tr>
+            <td><label for ="weight">Weight</label></td>
+            <td><input class="data-input" type="number" name="weight" id="weight" value="0" onclick="this.select()">&nbsp; kg</td>
+            
+            <td><label for ="distance">&nbsp;Distance</label></td>
+            <td><input class="data-input" type="number" name="distance" id="distance" value="0" onclick="this.select()">&nbsp; mile </td>
+        </tr>
+        
+        <div class="vl"></div>
+
+        <tr>
+            <td><label for ="time">Time</label></td>
+            <td><input class="data-input" type="number" name="time" id="time" value="0" onclick="this.select()">&nbsp; mins </td> 
+        </tr>
+        
+    </table>
+        <br>
+            <div class="calculate">
+                <button type="submit" id="calculate" onclick="calculate()">Calculate</button>
+            </div>
+    </div>
+
+    
+
+    <div>
+        <td><label for="calories" class="output">Calories Burned</label></td>
+        <td class="output" id="calories"></td>
+    </div>
+    
+
+
+</div>
+
+
+<div class = "container">
+    <h1 class = "incline">Incline</h1>
+
+    <span id="countlabel1">0</span>
+
+    <div class = "incline-controls">
+        <button id = "incline-up-btn"><img src = "top-left.png"></button>
+        <button id = "incline-down-btn"><img src = "bottom-left.png"></button>
+        <script src="script.js"></script>
+    </div>
+</div>
+
+<div class = "container2">
+    <h1 class = "speed">Speed</h1>
+    
+    <span id="countlabel2">0.0</span>
+
+    <div class = "speed-controls">
+        <button id = "speed-up-btn"><img src = "top-right.png"></button>
+        <button id = "speed-down-btn"><img src = "bottom-right.png"></button>
+        <script src="script.js"></script>
+    </div>
+</div>
+
+
+
+</body>
+</html>
